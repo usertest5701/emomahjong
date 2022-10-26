@@ -253,12 +253,6 @@ public class GameModel {
         }
     }
 
-    public void levelFinished() {
-        this.matches = 0;
-        this.level++;
-        this.lastMovesStack.clear();
-    }
-
     public void updateActiveTiles(Tile tile, boolean remove) {
         Tile left = tile.getLeftNeighbor();
         Tile right = tile.getRightNeighbor();
